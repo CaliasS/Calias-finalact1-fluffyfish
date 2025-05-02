@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flappy Fish</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <div id="game-container">
+    <div id="offline">No internet connection</div>
+    <h2 id="score" style="display:none;"></h2>
+
+    <div id="start-screen">
+      <h1>🐟 Flappy Fish</h1>
+      <p>
+        Help the fish swim through the pipes!<br>
+        Avoid hitting them or you'll lose!<br><br>
+        Tap or press space to swim!
+      </p>
+      <img src="fish.png" alt="Fish" id="start-fish">
+      <button id="start-btn">Start Game</button>
+    </div>
+    
+    <canvas id="gameCanvas"></canvas>
+  </div>
+
+  <audio id="bgMusic" src="background.mp3" loop></audio>
+  <audio id="swimSound" src="swim.mp3"></audio>
+  <audio id="pointSound" src="point.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
